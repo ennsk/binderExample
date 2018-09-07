@@ -14,6 +14,7 @@ library(leaflet.extras)
 library(sp)
 library(rvest)
 library(raster)
+library(jsonlite)
 # library(rgdal)
 library (DT)
 library(htmlwidgets)
@@ -23,10 +24,10 @@ library(RCurl)
 library(ggthemes)
 library(dplyr)
 
-if(!require(devtools)){install.packages("devtools")}
-devtools::install_github("khufkens/MODISTools", build_vignettes = FALSE)
-library(MODISTools)
-source('tokens.R')
+# if(!require(devtools)){install.packages("devtools")}
+# devtools::install_github("khufkens/MODISTools", build_vignettes = FALSE)
+# library(MODISTools)
+# source('tokens.R')
 
 # Variables
 table_url = 'https://phenocam.sr.unh.edu/webcam/network/siteinfo/?format=csv'
@@ -70,7 +71,7 @@ site_filters = c('All', 'Type1', 'Type2', 'Type3', 'NEON', 'Active', 'Inactive')
 #   date_end = last date images collected on
 #   date_start = first date images collected on
 
-rois=fromJSON('https://phenocam.sr.unh.edu/api/roilists/?format=json&limit=2000')
+rois= jsonlite::fromJSON('https://phenocam.sr.unh.edu/api/roilists/?format=json&limit=2000')
 roi_files=rois$results
 
 
