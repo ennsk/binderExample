@@ -79,6 +79,7 @@ RUN apt-get update -qq \
     labeling \
     lazyeval \
     leaflet \
+    leaflet.extras \
     magrittr \
     markdown \
     mclust \
@@ -109,6 +110,7 @@ RUN apt-get update -qq \
     scales \
     selectr \
     shiny \
+    shiny.js \
     sourcetools \
     sp \
     splancs \
