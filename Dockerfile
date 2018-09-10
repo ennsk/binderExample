@@ -36,6 +36,7 @@ RUN apt-get update -qq \
     RColorBrewer \
     dplyr \
     ggplot2 \
+    ggthemes \
     httr \
     jsonlite \
     leaflet \
@@ -45,6 +46,7 @@ RUN apt-get update -qq \
     rgeos \
     rgdal \
     rlang \
+    rjson \
     rmarkdown \
     rvest \
     scales \
