@@ -1,3 +1,7 @@
+install.packages("raster")
+install.packages("leaflet")
+install.packages("shiny")
+
 # install.packages("tidyverse")
 # install.packages("rmarkdown")
 # install.packages("httr")
