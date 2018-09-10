@@ -40,19 +40,14 @@ RUN apt-get update -qq \
     jsonlite \
     leaflet \
     leaflet.extras \
-    pander \
-    pillar \
     pkgconfig \
     raster \
     rgeos \
     rgdal \
     rlang \
     rmarkdown \
-    rprojroot \
-    rstudioapi \
     rvest \
     scales \
-    selectr \
     shiny \
     shinyjs \
     sp
