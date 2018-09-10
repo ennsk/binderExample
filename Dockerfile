@@ -31,77 +31,17 @@ RUN apt-get update -qq \
   && R -e "source('https://bioconductor.org/biocLite.R')" \
   && install2.r --error \
     --deps TRUE \
-    BH \
-    FNN \
-    R6 \
     RColorBrewer \
-    RODBC \
-    RandomFields \
-    RandomFieldsUtils \
-    Rcpp \
-    WriteXLS \
-    assertthat \
-    backports \
-    base64enc \
-    bindr \
-    bindrcpp \
-    boot \
-    cellranger \
-    cli \
-    clipr \
-    colorspace \
-    crayon \
-    crosstalk \
-    curl \
-    devtools \
-    dichromat \
-    digest \
     dplyr \
-    evaluate \
-    ezknitr \
-    fitdistrplus \
-    gdata \
-    geoR \
     ggplot2 \
-    git2r \
-    glue \
-    gridExtra \
-    gtable \
-    gtools \
-    highr \
-    hms \
-    htmltools \
-    htmlwidgets \
-    httpuv \
     httr \
     jsonlite \
-    kableExtra \
-    kernlab \
-    knitr \
-    ks \
-    labeling \
-    lazyeval \
     leaflet \
-    magrittr \
-    markdown \
-    mclust \
-    memoise \
-    mime \
-    multicool \
-    munsell \
-    mvtnorm \
-    openssl \
+    leaflet.extras \
     pander \
     pillar \
     pkgconfig \
-    plogr \
-    plyr \
-    png \
     raster \
-    readr \
-    readxl \
-    rematch \
-    reshape2 \
     rgeos \
     rgdal \
     rlang \
@@ -112,19 +52,8 @@ RUN apt-get update -qq \
     scales \
     selectr \
     shiny \
-    sourcetools \
-    sp \
-    splancs \
-    stringi \
-    tibble \
-    utf8 \
-    viridis \
-    viridisLite \
-    whisker \
-    withr \
-    xml2 \
-    xtable \
-    yaml
+    shinyjs \
+    sp
 
 COPY . ${HOME}
 RUN chown -R ${NB_USER} ${HOME}
